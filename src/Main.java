@@ -51,12 +51,6 @@ public class Main {
         System.out.println("Introduceti varsta: ");
         int varsta = scanner.nextInt();
 
-
-        Persoana persoana = new Persoana();
-        persoana.setNume(nume);
-        persoana.setPrenume(prenume);
-        persoana.setVarsta(varsta);
-
     }
 
     public static void playWithBankAcccount(){
