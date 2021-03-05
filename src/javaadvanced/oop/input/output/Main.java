@@ -41,7 +41,7 @@ public class Main {
          */
 
         File absolutFile = new File("C:/TEST/test.txt");
-         File outputFile = new File("C:/TEST/output.txt");
+        File outputFile = new File("C:/TEST/output.txt");
 
          if(!outputFile.exists()){
          outputFile.createNewFile();
@@ -54,7 +54,7 @@ public class Main {
 
          while ((fileLine = bufferedReader.readLine()) != null) {
          System.out.println(fileLine);
-         bufferedWriter.append(fileLine);
+         bufferedWriter.append(fileLine);//aici copiem continutul din celalalt fisier
          bufferedWriter.newLine();
          }
          } catch (IOException e) {

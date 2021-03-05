@@ -3,7 +3,6 @@ import javaadvanced.oop.student.Persoana;
 import javaadvanced.oop.inherintence.*;
 import javaadvanced.oop.sistemDeCurierat.GenericPackage;
 import javaadvanced.oop.student.Student;
-
 import java.util.Scanner;
 
 
@@ -18,6 +17,7 @@ public class Main {
        // playWithTime();
        // playWithPersoana();
         //playWithGenericPackage();
+
 
     }
     public static void playWithGenericPackage(){
@@ -42,6 +42,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Student[] facultate = new Student[2];
         for(int i =0; i< facultate.length;i++)
+
             System.out.println("Introduceti numele studentului: ");
         String nume = scanner.next();
 
@@ -78,32 +79,35 @@ public class Main {
         Animal animal = new Animal();
         Animal dog = new Dog();
         Animal cat = new Cat();
-        //Animal rata = new Rata();
         Cat otherCat = new Cat();
 
         animal.makeSound();
         dog.makeSound();
         cat.makeSound();
+
         otherCat.purr();
-        otherCat.purr("Angel");//compile time polimorfism(static) overloading
+        otherCat.purr("Angel");           //compile time polimorfism(static) overloading
 
 
         System.out.println("1------------------");
+
         Animal[] arrayOfAnimals = new Animal[3];   //sau
-        //    Animal arrayOfAnimals2[] = new Animal[3];
+                                                   //    Animal arrayOfAnimals2[] = new Animal[3];
         arrayOfAnimals[0] = animal;
         arrayOfAnimals[1] = dog;
         arrayOfAnimals[2] = cat;
 
         //for este varianta de for clasic de iterare(parcurgere) a elementelor unui array, pentru doar un element
+
         for (int i = 0; i < arrayOfAnimals.length; i++) {
             arrayOfAnimals[i].makeSound();
         }
 
         //sau foreach- este varianta de for enhanced  de iterare(parcurgere) a elementelor unui array   ...pentru fiecare element
         System.out.println("2---------------------");
+
         for (Animal element : arrayOfAnimals) {
-            element.makeSound();   //putem folosi brack, return.....in if  run time polymorfism(dinamic)overriding
+            element.makeSound();                //putem folosi back, return.....in if  run time polymorfism(dinamic)overriding
         }
     }
 

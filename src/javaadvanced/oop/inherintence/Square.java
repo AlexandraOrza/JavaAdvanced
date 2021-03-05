@@ -1,6 +1,7 @@
 package javaadvanced.oop.inherintence;
 
-public class Square extends GeometricFigure  {  //alt+enter+implement methods
+public class Square extends GeometricFigure  {
+    //alt+enter+implement methods
     private int side;
 
     public Square(int side) {  //clic dreapta+generate +constructor
