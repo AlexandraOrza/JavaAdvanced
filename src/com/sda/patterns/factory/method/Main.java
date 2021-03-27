@@ -1,0 +1,11 @@
+package com.sda.patterns.factory.method;
+
+public class Main {
+    public static void main(String[] args) {
+
+        MercedesCarFactory mercedesCarFactory = new MercedesCarFactory();
+        Car car1 = mercedesCarFactory.order(5000);
+        System.out.println(car1.getModel());
+    }
+
+}
